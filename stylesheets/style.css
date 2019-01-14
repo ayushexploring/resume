@@ -1,0 +1,251 @@
+/*################## GENERAL START ###################*/
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+@font-face {
+font-family: 'Eurostile';
+font-style: normal;
+font-weight: normal;
+src: local('Eurostile'), url('eurostile.woff') format('woff');
+}
+@font-face {
+font-family: 'EuroStyle Normal';
+font-style: normal;
+font-weight: normal;
+src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
+}
+html, body {
+  background-color: white;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+/*################## GENERAL END ###################*/
+
+
+/*################## NAVBAR START ###################*/
+.my-ul { margin: 0 auto; }
+#my-icon{ width: 40px; height: 50px; }
+.my-a{ margin-left: 3vw; margin-right: 3vw; }
+/*################## NAVBAR END ###################*/
+
+
+/*################## PARTICLES START ###################*/
+.my-head{ 
+	position: absolute;
+	text-align: center; 
+	top: auto;
+	left: auto;
+	font-size: 4em;
+}
+#particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 6.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+  color: white;
+  z-index: 1;
+  /*margin-top: -8em;*/
+  margin-top: -80vh;
+  font-family: 'Eurostile', sans-serif;
+  text-align: center;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+/*################## PARTICLES END ###################*/
+
+
+/*################## SOCIAL ICONS START ###################*/
+#social-links { 
+  margin-left: 35%;
+}
+
+.social-links-class {
+  margin-top: 2%;
+  padding: 2%;
+}
+/*################## SOCIAL ICONS END ###################*/
+
+
+/*################## ABOUT SECTION START ###################*/
+#about {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 10em;
+  background: white;
+}
+.about {
+  height: 100vh;
+}
+.about-right {
+  background: #2b292e;
+}
+.about-left {
+  background: url(../images/profile1.jpeg);
+  background-size: cover;
+  background-position: top;
+  /*background-attachment: fixed;*/
+  filter: brightness(40%);
+}
+.info {
+  color: #cdc7c8;
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+  line-height: 50px;
+}
+h1.info {
+  margin-top: 20%;
+}
+/*################## ABOUT SECTION END ###################*/
+
+
+/*################## ABOUT1(MODAL TYPE BOX) SECTION START ###################*/
+.desc {
+  position: absolute;
+  top: -15vh;
+  background: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  height: 30vh;
+}
+.about1-clas {
+  background: #926efa;
+  height: 80vh;
+}
+.icons {
+  padding: 40px;
+  text-align: center;
+  color: black;
+}
+.more-about h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Eurostile';
+  font-size: 40px
+}
+.more-about p {
+  font-family: 'Eurostile';
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+/*################## ABOUT1(MODAL TYPE BOX) SECTION END ###################*/
+
+
+/*################## SKILLS SECTION START ###################*/
+#skills {
+  height: 100vh;
+  background: grey;
+}
+/*################## SKILLS SECTION END###################*/
+
+
+/*################## FOOTER START ###################*/
+#footer {
+  background: #926efa;
+  height: 30%;
+}
+.end-note p {
+  color: white;
+  text-align: center;
+}
+.end-note img {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 45vw;
+}
+/*################## FOOTER END ###################*/
+
+
+/*################## SCROLL-BAR START ###################*/
+html::-webkit-scrollbar {
+  width: 20px;
+  height: 30px;
+}
+html::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear,left top,left bottom,from(#ff8a00),to(#da1b60));
+  background: linear-gradient(to bottom,#ff8a00,#da1b60);
+  border-radius: 30px;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255,255,255,.4), inset -2px -2px 2px rgba(0,0,0,.4);
+  box-shadow: inset 2px 2px 2px rgba(255,255,255,.4), inset -2px -2px 2px rgba(0,0,0,.4);
+}
+html::-webkit-scrollbar-track {
+  /*background: linear-gradient(to right,#2c292e,#2c292e 1px,#2c292e 1px,#ffffff);*/
+  background: white;
+}
+/*################## SCROLL-BAR END ###################*/
+
+
+/*################## MEDIA-QUERIES START ###################*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1350px) {
+  .about-left {
+    background: url(../images/profile2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+  }     
+}
+@media only screen and (max-device-width: 767px) {
+  .about-left {
+    height: 80%;
+    background-attachment: fixed;
+    background-position: top;
+  }
+  .about-right {
+    height: 70%;
+  }
+  .desc {
+    position: absolute;
+    top: 35vh;
+    background: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 30vh;
+  }
+  .more-about {
+    height: 100vh;
+    margin-top: 40vh;
+    border-radius: 20px;
+  }
+  .more-about h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Eurostile';
+    font-size: 25px
+  }
+  .more-about p {
+    font-family: 'Eurostile';
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+  .about1-clas {
+    height: 125vh;
+  }
+}
+/*################## MEDIA-QUERIES END ###################*/
